@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
+    <!-- header section -->
     <header>
         <h1 class="heading-style">My monthly expenses <i class="fa-solid fa-dollar-sign"></i></h1>
     </header>
+    <!-- container section -->
     <div class="container">
         <div class="row">
             <div class="column1">
@@ -20,6 +22,7 @@
             </div>
             <div class="column2">
                <h3>Income</h3>
+               <!-- income section -->
                <div class="income-area">
                    <label for="">Income:</label>
                    <input id="income-input" type="text"><br>
@@ -32,27 +35,27 @@
                    <input id="clothes-input" type="text"><br><br><br>
                    <button id="calculate-button" class="calculate-btn">Calculate</button>
                </div>
+               <!-- total section -->
                <div class="total-area">
                    <h5>Total Expenses: <span id="total-expenses">00</span></h5>
                    <h5>Balance: <span id="balance">00</span> </h5>
                </div>
+               <!-- save section -->
                <div class="saving-area">
                    <label for="">Save: </label>
-                   <input class="save-input" type="text">
+                   <input id="save-input" class="save-input" type="text">
                    <span class="modulus">%</span>
-                   <button class="save-button">Save</button>
+                   <button id="save-button" class="save-button">Save</button>
                </div>
+               <!-- remaining section -->
                <div class="total-saving">
-                   <h5 class="saving-amount">Saving Amount: </h5>
-                   <h5 class="remaining-balance">Remaining Balance: </h5>
+                   <h5 class="saving-amount">Saving Amount: <span id="saving-amount">00</span> </h5>
+                   <h5 id="remaining-balance" class="remaining-balance">Remaining Balance: <span id="remaining-balance">00</span> </h5>
                </div>
             </div>
         </div>
     </div>
-
-
-
-
+    <!-- js script -->
     <script src="js/app.js"></script>
 </body>
 </html>

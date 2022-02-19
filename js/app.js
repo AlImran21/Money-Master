@@ -2,13 +2,13 @@ document.getElementById ('calculate-button').addEventListener ('click', function
     const incomeInput = document.getElementById ('income-input');
     const incomeInputText = incomeInput.value;
     let incomeAmount = parseFloat (incomeInputText);
-    // console.log (incomeAmount);
-    incomeInput.value = '';
-
+     // console.log (incomeAmount);
+     incomeInput.value = '';
+    
     const foodInput = document.getElementById ('food-input');
     const foodInputText = foodInput.value;
     let foodAmount = parseFloat (foodInputText);
-    // console.log (foodAmount);
+    // console.log (foodAmount); 
     foodInput.value = '';
 
     const rentInput = document.getElementById ('rent-input');
@@ -36,3 +36,5 @@ document.getElementById ('calculate-button').addEventListener ('click', function
     let expensesAmount = totalExpenses;
     totalExpensesField.innerText = totalExpenses;
 });
+
+
